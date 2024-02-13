@@ -3,27 +3,34 @@ package ProyectoCalculadora;
 public class Calculadora {
     public int num1, num2;
 
-    public Calculadora(int num1, int num2){
+    public Calculadora(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
 
-    public int suma(){
+    public int suma() {
         return num1 + num2;
     }
 
-    public int multiplicacion(){
+    public int resta() {
+        return num1 - num2;
+    }
+
+    public int multiplicacion() {
         return num1 * num2;
     }
 
-    public int division(){
+    public int division() {
         return num1 / num2;
     }
 
-    public void realizarOperacion(int operacion){
-        switch(operacion){
+    public void realizarOperacion(int operacion) {
+        switch (operacion) {
             case 1:
                 suma();
+                break;
+            case 2:
+                resta();
                 break;
             case 3:
                 multiplicacion();
