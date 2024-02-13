@@ -16,6 +16,10 @@ public class Calculadora {
         return num1 * num2;
     }
 
+    public int division(){
+        return num1 / num2;
+    }
+
     public void realizarOperacion(int operacion){
         switch(operacion){
             case 1:
@@ -23,6 +27,9 @@ public class Calculadora {
                 break;
             case 3:
                 multiplicacion();
+                break;
+            case 4:
+                division();
                 break;
             default:
                 System.out.println("Opción no válida");
