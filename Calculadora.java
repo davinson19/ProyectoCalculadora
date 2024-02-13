@@ -12,10 +12,17 @@ public class Calculadora {
         return num1 + num2;
     }
 
+    public int multiplicacion(){
+        return num1 * num2;
+    }
+
     public void realizarOperacion(int operacion){
         switch(operacion){
             case 1:
                 suma();
+                break;
+            case 3:
+                multiplicacion();
                 break;
             default:
                 System.out.println("Opción no válida");
